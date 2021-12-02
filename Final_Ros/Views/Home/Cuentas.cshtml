@@ -1,0 +1,43 @@
+﻿@{
+    var cuentas = (List<Cuenta>)Model;
+}
+
+<h1>Lista de cuentas</h1>
+<a href="/Home/Crear" class="btn btn-primary">Crear Cuenta</a>
+
+<h5>Monto total: @ViewBag.MontoTotal S./</h5>
+
+<div class="row">
+    <div class="col">
+        <table id="tabla" class="table">
+            <thead class="text-center">
+                <tr>
+                    <th>Categoria</th>
+                    <th>Nombre</th>
+                    <th>Saldo</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                @foreach (var item in cuentas)
+                {
+                    <tr>
+                        <td>@item.Categoria</td>
+                        <td>@item.Nombre</td>
+                        <td class="text-center">
+                            @if (item.Categoria == "Credito")
+                            {
+                                <strong>Limite</strong><span> @item.Limite S/.</span>
+                            }
+                            <strong>Saldo</strong> @item.Saldo S/.
+                        </td>
+                        <td>
+                            <a href="/Home/Ingresos?id=@item.Id">Ingresos </a>
+                            |<a href="/Home/Gastos?id=@item.Id"> Gastos</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

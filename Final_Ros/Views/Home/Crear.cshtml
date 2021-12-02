@@ -1,0 +1,30 @@
+﻿@{var cuenta = (Cuenta)Model; }
+
+<div class="row">
+    <div class="col-6">
+        <form action="/Home/Crear" method="post">
+            <label>Nombre</label>
+            <div class="form-group">
+                <input class="form-control" name="Nombre" value="@Model.Nombre" />
+                @Html.ValidationMessage("Nombre")
+            </div>
+            <label>Categoria</label>
+            <div class="form-group">
+                <select name="Categoria" class="form-control">
+                    <option value="">-- Selecciona una categorias --</option>
+                    @foreach (var item in ViewBag.Categorias)
+                    {
+                        <option value="@item">@item</option>
+                     }
+                </select>
+                @Html.ValidationMessage("IdCategoria")
+            </div>
+            <label>Saldo</label>
+            <div class="form-group">
+                <input class="form-control" name="Saldo" value="@Model.Saldo" />
+                @Html.ValidationMessage("Saldo")
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+    </div>
+</div>

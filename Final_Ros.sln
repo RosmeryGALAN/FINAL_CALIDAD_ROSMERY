@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Final_Ros", "Final_Ros\Final_Ros.csproj", "{5A1C0B35-2762-4AA9-B495-8B390D391B9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Final_Ros_Test", "Final_Ros_Test\Final_Ros_Test.csproj", "{ADABAB42-0F14-4A30-B13B-15715BAF8EB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A1C0B35-2762-4AA9-B495-8B390D391B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A1C0B35-2762-4AA9-B495-8B390D391B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A1C0B35-2762-4AA9-B495-8B390D391B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A1C0B35-2762-4AA9-B495-8B390D391B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADABAB42-0F14-4A30-B13B-15715BAF8EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADABAB42-0F14-4A30-B13B-15715BAF8EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADABAB42-0F14-4A30-B13B-15715BAF8EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADABAB42-0F14-4A30-B13B-15715BAF8EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8C8E675-3ED2-4922-AB8A-89CC20B25F2D}
+	EndGlobalSection
+EndGlobal

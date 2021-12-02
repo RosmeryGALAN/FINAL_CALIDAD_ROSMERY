@@ -1,0 +1,31 @@
+﻿@{ var cuenta = (Cuenta)ViewBag.Cuenta;
+    var transacciones = ((List<Transaccion>)Model); }
+
+<h1>Ingresos de la cuenta @cuenta.Nombre</h1>
+
+<a href="/Home/CrearGasto?id=@cuenta.Id" class="float-right btn btn-primary">Registrar Gasto</a>
+<br />
+
+<h4>Monto: @cuenta.Saldo S./</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tipo</th>
+            <th>Fecha</th>
+            <th>Motivo</th>
+            <th>Monto</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in transacciones)
+        {
+            <tr>
+                <td>@item.Tipo</td>
+                <td>@item.Fecha</td>
+                <td>@item.Descripcion</td>
+                <td>@item.Monto S/.</td>
+            </tr>
+        }
+    </tbody>
+</table>
